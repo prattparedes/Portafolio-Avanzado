@@ -367,7 +367,6 @@ MODAL
 }
 
 .modal__overlay {
-    background-color: #242424;
     position: absolute;
     top: 0;
     left: 0;
@@ -376,8 +375,20 @@ MODAL
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.modal__overlay--loading {
+    background-color: #242424;
     font-size: 80px;
     z-index: -1;
+}
+
+.modal__overlay--success {
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 28px;
 }
 
 .fa-spinner {
