@@ -148,7 +148,7 @@
                 <h4 class="modal__sub-title modal__sub-title--contact">
                     I'm currently open to new opportunities
                 </h4>
-                <form action="" class="contact__form">
+                <form action="" id="contact__form">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
                         <input type="text" name="user_name" class="input" required></input>
@@ -161,7 +161,13 @@
                         <label class="form__item--label">Message</label>
                         <textarea type="text" name="message" class="input" required></textarea>
                     </div>
+                    <button id="contact__submit" class="form__submit">
+                        Sent it my way
+                    </button>
                 </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
             </div>
         </div>
     </section>
