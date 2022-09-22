@@ -69,6 +69,7 @@ input:focus, textarea:focus {
 }
 
 .click {
+    cursor:pointer;
     transition: all 300ms ease;
 }
 
@@ -389,6 +390,7 @@ MODAL
     font-weight: bold;
     text-align: center;
     padding: 28px;
+    z-index: -1;
 }
 
 .fa-spinner {
@@ -402,6 +404,15 @@ MODAL
     100% {
         transform: rotate(360deg);
     }
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 36px;
+    z-index: 100;
 }
 
 /* 
