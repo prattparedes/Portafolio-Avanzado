@@ -2,6 +2,20 @@
 // service_v0vpc6f
 // bwIWr7XwpIPXx7B-1
 
+let isModalOpen = false 
+let contrastToggle = false
+
+
+function toggleContrast() {
+  if (contrastToggle) {
+    contrastToggle = !contrastToggle
+    return document.body.classList.remove("dark-theme")
+  }
+  document.body.classList += " dark-theme"
+  contrastToggle = !contrastToggle
+}
+
+
 function contact(event) {
   event.preventDefault(); //Por defecto los forms cuando son submit la pagina se refresca, para evitar eso usamos event.preventDefault()
   const loading = document.querySelector(".modal__overlay--loading");
@@ -26,7 +40,6 @@ function contact(event) {
 }
 
 
-let isModalOpen = false
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false

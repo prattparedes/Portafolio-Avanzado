@@ -40,7 +40,7 @@
                     link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -52,7 +52,7 @@
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    "><i class="fas fa-adjust"></i></a>
+                    "><i class="fas fa-adjust" onclick="toggleContrast()"></i></a>
                 </li>
             </ul>
         </nav>
@@ -64,7 +64,7 @@
                     I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web
                     applications with great user experiences.
                     <br>
-                    Here's a bit more <b class="orange">about me.</b>
+                    Here's a bit more <b class="orange click" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/pratt-thomas-paredes-casapia-ba04a4197/" target="_blank"
@@ -179,7 +179,7 @@
                 <div class="modal__overlay modal__overlay--success">
                     Thanks for the message! Looking forward to speaking to you soon.
                 </div>
-                <i class="fas fa-times modal__exit click"></i>
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             </div>
         </div>
     </section>
