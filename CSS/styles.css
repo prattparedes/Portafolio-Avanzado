@@ -94,7 +94,7 @@ input:focus, textarea:focus {
 }
 
 .orange {
-    color: #f06449;
+    color: #f06449 !important;
 }
 
 .link__hover-effect {
