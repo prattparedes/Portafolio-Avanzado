@@ -26,7 +26,7 @@
                 <img src="./CSS/Assets/logo.svg" id="personal-logo" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -34,7 +34,7 @@
                     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
@@ -47,12 +47,12 @@
                     link__hover-effect--black
                     ">Contact</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    "><i class="fas fa-adjust" onclick="toggleContrast()"></i></a>
+                    "><i class="fas fa-adjust"></i></a>
                 </li>
             </ul>
         </nav>
@@ -80,9 +80,11 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click" onclick="toggleModal()">
-            <i class="fas fa-envelope"></i>
-        </button>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -305,7 +307,7 @@
                     ">
                         LinkedIn
                     </a>
-                    <a href="#" class="
+                    <a href="#" onclick="toggleModal()"" class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
