@@ -10,14 +10,10 @@ function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape")  // query selector all returns an array
   const x = event.clientX * scaleFactor;
   const y = event.clientY * scaleFactor;
-  for (let i = 0; i < shapes.length; ++i) {
+  for (let i = 0; i < shapes.length; ++i) { 
     const isOdd = i % 2 !== 0;
-    if (isOdd) {
-      shapes[i].style.transform = `translate(${x}px, ${y}px)`
-    }
-    else {
-      shapes[i].style.transform = `translate(${-x}px, ${-y}px)`
-    }   
+    const boolInteger = isOdd ? -1 : 1
+    shapes[i].style.transform = `translate(${x * boolInteger}px, ${y * boolInteger}px) rotate(${x * 10}deg)`
 }}
 
 function toggleContrast() {
